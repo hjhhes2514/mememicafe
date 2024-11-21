@@ -9,10 +9,12 @@
   *zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+  width: 100%;
 }
 .bx-wrapper img {
   max-width: 100%;
   display: block;
+  width: 1000px;
 }
 .bxslider {
   margin: 0;
@@ -113,7 +115,7 @@ DIRECTION CONTROLS (NEXT / PREV)
 }
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
-  top: 50%;
+  top: 80%;
   margin-top: -16px;
   outline: 0;
   width: 32px;
