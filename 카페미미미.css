@@ -14,8 +14,8 @@ a{text-decoration: none;}
     background-position: bottom center;
 }
 .toplogo{
-    position: relative;
-    top:50px;
+    position:absolute;
+    top:20px;
     left: 50px;
     width: 184px;
     height: 54px;
@@ -24,16 +24,18 @@ a{text-decoration: none;}
 #join{height:76px; top:0; right:20px; padding:12px 0; position:absolute;}
 #join > ul {width:100%; line-height:76px; font-size:11px;}
 #join > ul > li{height:76px; color:#979797; float:left; padding:0 9px;}
-#join > ul > li:last-child img{width:14px; height:14px; padding:31px 0;}		
+#join > ul > li:last-child img{width:14px; height:14px; padding:31px 0;}
+#join>ul>li>a{color: #666;}		
 
 .navibar{
     width: 100%;
     /* height: 50px; */
     /* border: 1px solid red; */
     position: relative;
-    top: -30%;
+    top: 0%;
     background: white;
     z-index: 1;
+    position: sticky;
 }
 .nav{
     width: 710px;
@@ -82,8 +84,8 @@ a{text-decoration: none;}
 .nav:hover>li:last-child{
     position: absolute;
     top: 100%;
-    height: 470px;
-    opacity: .8;
+    height: 420px;
+    opacity: .9;
     background-color: rgba(250,250,250,1);
 }
 .nav>li:last-child{
@@ -116,7 +118,6 @@ a{text-decoration: none;}
     height: 50px;
     line-height: 50px;
 }
-
 /* 각각 서브메뉴의 시작점을 맞추기위해 */
 
 .nav>li:nth-child(2) .smenu{position: relative; left: -118px;}
@@ -201,51 +202,52 @@ a{text-decoration: none;}
     top: -380px;
     float: left;
 }
-#bx{
-    position: relative;
+/* bxslider+오른쪽 이미지 */
+.main{
     width: 100%;
-    height: 100%;
-}
-
-.maintop{
-    width: 100%;
-    height: 400px;
+    height: auto;
+    /* border:  1px solid red; */
     position: relative;
 }
+.main p{
+    position: absolute;
+    top: 20px;
+    right: 270px;
+    font-size: 30pt;
+    color: #fff;
+}
 
-#mainbanner{
-    width: 100%;
+
+/* 상단 오른쪽 이미지 */
+.oasis{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 800px;
+    margin-bottom: 100px;
+    height:900px;
+}
+.oasis img{position: absolute;
+    top:-20px; height: 530px;}
+
+.oasis>p{
     position: absolute;
     top: 0px;
-    left: 960px;
-}
-#mainbanner>p{
-    font-size: 2.5rem;
+    left: 20px;
+    z-index: 9999;
+    font-size: 30pt;
     color: #fff;
-    position: relative;
-    top: -475px;
-    left: 2%;
-    font-weight: bold;
-    /* left: 40%; */
-}
-.main>li>p{
-    font-size: 2.5rem;
-    color: #fff;
-    position: relative;
-    top: -470px;
-    left: 40%;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-/* MeMeMi Now */
+/* MeMeMi Now 시작*/
 
 .now{
-    height: 150px;
+    width: 100%;
+    height: 180px;
     /* border: 1px solid red; */
-    width: 500px;
     position: relative;
-    left:37%;
-    top: 8%;
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -257,48 +259,51 @@ a{text-decoration: none;}
 
 .mainhover{
     width: 100%;
-    height: 800px;
+    height: 680px;
     background: #f7f1f0;
     position: relative;
-    top: 90px;
-    margin: 0 ;
+    top: 10px;
     margin: 0 auto;
+    padding-top: 3%;
 }
-.mainhover p{
-    font-size: 30px;
-}
-.mainhover ul{
+.mainhover>ul{
     position: relative;
     top: 120px;
-    width: 1400px;
-    height: 500px;
-    /* border:  1px solid red; */
-}
-.mainhover ul li{
-    width: 350px;
-    height: 100%;
-    float: left;
-    text-align: center;
-    margin-right: 10px;
-    list-style: none;
-    margin-top: 10%;
+    width: 1250px;
+    height: 200px;
     margin: 0 auto;
+}
+.mainhover>ul>li{
+    height: 200px;
+    width: 309px;
+    float: left;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: -50px;
 }
 
 .box{
     position: relative;
     top: 10%;
-    
     transition: all 1s;
     margin: 0 auto;
-    /* border: 1px solid red; */
 }
+
+.box>li:nth-child(1){position: absolute; left: 0; top: -140px;} 
+.box>li:nth-child(2){position: absolute; left: 310px; top: -140px;} 
+.box>li:nth-child(3){position: absolute; left: 620px; top: -140px;} 
+.box>li:nth-child(4){position: absolute; left: 930px; top: -140px;} 
+
 .box p{
     width: 200px;
     height: 50px;
     font-size: 1rem;
     color: #000;
     margin-left: 70px;
+    margin: 0 auto;
 }
 
 .box p>a{
@@ -315,7 +320,7 @@ a{text-decoration: none;}
 .box>li:nth-child(3):hover img{transform: scale(1.2);}
 .box>li:nth-child(4):hover img{transform: scale(1.2);}
 
-
+/* mememi garden 시작 */
 .garden{
     width: 100%;
     height: 1000px;
@@ -330,7 +335,6 @@ a{text-decoration: none;}
 .garden>.grdtxt{
     width: 100%;
     height: 80px;
-    /* border: 1px solid red; */
     padding: 100px;
     text-align: center;
 }
@@ -347,13 +351,17 @@ a{text-decoration: none;}
     position: relative;
     left: -10px;
     top: 50px;
+    overflow: hidden;
 }
 
-.gdimg div{
-    width: 320px;
+.gdimg>div{
     /* border: 1px solid blue; */
     float: left;
+    height: auto;
     transition: all 1s;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
 }
 
 .gdimg div:nth-child(1){
@@ -401,42 +409,117 @@ a{text-decoration: none;}
 }
 .gdimg div:nth-child(6) u{text-align: center; top: 40%; color: #fff;}
 
-.gdimg p{
-    font-size: .8rem; 
-    position: absolute; 
-    top:50%; 
-    left: 10%; 
-    text-align: center;
-    overflow: hidden;
+.gdimg div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* 배경의 어두운 효과 */
+}
+.gdimg div:hover::before {
+    opacity: 1; /* 호버 시 배경 어두워짐 */
 }
 
+.gdimg div p,
+.gdimg div u {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 1s;
+    opacity: 0;
+    transition: opacity 0.3s ease, /* 글씨가 부드럽게 나타나도록 */
+}
+
+.gdimg div p{
+    /* position: absolute; */
+    text-align: center;
+
+}
+.gdimg div:hover p,
+.gdimg div:hover u {
+    opacity: 1; /* 호버 시 글씨 보이게 */
+}
 u{
     font-size: 1rem; 
     position: absolute; 
-    top: 25%; 
+    top: 50%; 
     left: 40%;
     color: #fff;
     text-align: center;
 }
-.gdimg div:hover{
-    filter: brightness(50%);   
+
+.gdimg div img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* 이미지를 부드럽게 확대하는 효과 */
 }
 
-/* 하단부 시작*/
+/* gdimg 세부사항 맞추기 */
+.gdimg div p:nth-of-type(1){
+    position: absolute;
+    top: 42%;
+}
+
+.gdimg div p:nth-child(3){
+    position: absolute;
+    top:-300px;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+
+/* 하단부 시작 attachment fixed 부분부터 아래*/
 .contxt{
     width: 100%;
-    height: 150px;
-    border: 1px solid red;
+    height: 170px;
     padding-top: 80px;
     position: relative;
+    text-align: center;
+    /* border: 1px solid #000; */
+    top: -50;
 }
-
 .contxt>div>p{font-size: 1.8rem; text-align: center; }
 
+.contxt>.title{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 5%;
+}
+.title{
+    width: 300px;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+.contxt>.title>h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.contxt>.title>h4{font-weight: 500;}
+
+.title>div:nth-of-type(2){color: #666;}
 
 .container{
     width: 100%;
-    height: 400px;
+    height: 550px;
+    position: relative;
+    top: 40px;
 }
 .backimg{
     width: 100%;
@@ -446,17 +529,356 @@ u{
     background-position: center center;
     background-attachment: fixed;
 }
-.container2{
+.container1{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    position: relative;
+}
+.container1>ul{
+    width: 1050px; 
+    height: 100%; 
+    margin: 0 auto; 
+    margin-top: 50px;
+    /* border:  1px solid red; */
+}
+
+.container1>ul>li{ 
     width: 500px;
-    height: 316px;
+    height: 100%;
+    margin-right: 150px;
+}
+.container1 ul li a{display:block;}
+
+.bg1{
+    width: 500px;
+    height: 300px;
     background: url(images/index_img/cafe\ chungdam.jpeg) no-repeat;
     background-size: cover;
 }
 
-.container3{
+.bg2{
     width: 500px;
-    height: 316px;
+    height: 300px;
     background: url(images/index_img/cafe\ dosan.jpeg) no-repeat;
-    background-size: cover;
+    position: relative;
+    top: -300px;
+    left: 550px;
 }
+.bg1 h5:first-child{
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    color: #000;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.bg1 h5:nth-child(2){position: absolute;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    color: #777;
+    position: absolute;
+    top: 340px;
+    font-size: 10pt;
+    font-weight: 500;
+}
+.bg2 h5:first-child{
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    color: #000;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.bg2 h5:nth-child(2){position: absolute;
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    color: #777;
+    position: absolute;
+    top: 340px;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.container1>h5{
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-size: 1rem;
+}
+h4{color: #666;}
+
+.container1>ul>li{color: #666; font-size: .8rem;}
+
+.contxt2>.title{
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 1400px;
+    background: #fff6fc;
+    text-align: center;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+}
+.contxt2>.title>h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.contxt2>.title>div:nth-child(3){padding-top: 15px;}
+
+.section{
+    width: 1050px;
+    height:1100px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+.section>.b1{
+    width: 250px;
+    height: 250px;
+    background: url(images/index_img/16_0.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+}
+
+.section>.b2{
+    width: 250px;
+    height: 250px;
+    background: url(images/index_img/16_1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 275px;
+    top: 0;
+}
+
+.section>.b3{
+    width: 250px;
+    height: 250px;
+    background: url(images/index_img/16_2.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 0px;
+    top: 275px;
+}
+
+.section>.b4{
+    width: 250px;
+    height: 250px;
+    background: url(images/index_img/16_3.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 275px;
+    top: 275px;
+}
+
+.section>.b5{
+    width: 500px;
+    height: 525px;
+    background: url(images/index_img/16_4.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.section>.b6{
+    width:525px;
+    height: 510px;
+    background: url(images/index_img/16_5.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left:0px;
+    top: 550px;
+}
+
+/*  */
+
+.section>.b7{
+    width: 240px;
+    height: 240px;
+    background: url(images/index_img/16_6.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 550px ;
+    left: 550px;
+}
+
+.section>.b8{
+    width: 240px;
+    height: 240px;
+    background: url(images/index_img/16_7.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    right: 0;
+    top: 550px;
+}
+
+.section>.b9{
+    width: 240px;
+    height: 250px;
+    background: url(images/index_img/16_8.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 550px;
+    top: 810px;
+}
+
+.section>.b10{
+    width: 240px;
+    height: 250px;
+    background: url(images/index_img/16_9.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    right:0px;
+    top: 810px;
+}
+
+.stay{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    padding-top: 20px;
+    background: #fff;
+    top: 250px;
+    /* border: 1px solid blueviolet; */
+}
+.ft1{line-height: 50px;}
+
+.stay h2{
+    font-weight: 500;
+    padding-top: 10px;
+}
+.stay h6{
+    font-weight: 500;
+}
+
+
+/*  */
+.footer2{
+    width:100%;
+    height:450px;
+    background:url(images/common/hd_visual.png)no-repeat;
+    background-position:center center;
+    background-size: cover;
+    position:relative;
+    top:250px;
+    left:0;
+    z-index:-2
+}
+.footer2::after{
+    content:"";
+    width:100%;
+    height:450px;
+    background:#000;
+    position:absolute;
+    opacity:.8;
+    top:0px;
+    left:0;
+    z-index:-1
+}
+.footer_left{
+    width:25%;
+    height:300px;
+    position: absolute;
+    left:25%;
+    top:15%;
+}
+.footer_left a button{padding: 3px; background: #666; color: #fff;}
+.footer_left p{
+    font-size:12px;
+    color:#fff;
+    line-height: 20px;;
+}
+.footer_left p:nth-of-type(1){
+    padding-top:30px;
+    box-sizing: border-box;
+}
+.footer_left p:nth-of-type(3)>a{
+    display:inline-block;
+    color:#fff;
+    margin-left:5px;
+    background:#999;
+    text-decoration: none;
+}
+.footer_left ul{
+    width:100%;
+}
+.footer_left ul li{
+    width:70px;
+    float:left;
+    margin-top:30px;
+}
+.footer_left ul li a{
+    display:inline-block;
+    color:#fff;
+    font-size:23px;
+}
+.footer_right{
+    width:30%;
+    height:200px;
+    box-sizing: border-box;
+    position:absolute;
+    top:15%;
+    left:58%;
+    cursor: pointer;
+}
+.footer_right ul{
+    float:left;
+    width:200px;
+    color:white;
+    font-size:14px;
+    /* cursor: pointer; */
+}
+.footer_right ul li:nth-of-type(1){
+    margin-top:20px;
+}
+.footer_right ul li{
+    width:150px;
+    margin-left:10px;
+    font-size:13px;
+    line-height: 40px;
+    
+}
+.footer_right ul li a{
+    display:block;
+    color:#fff;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 

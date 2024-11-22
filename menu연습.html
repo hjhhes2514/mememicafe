@@ -10,6 +10,9 @@
     <link href="jquery.bxslider.css" rel="stylesheet">
     <script src="jquery-3.1.1.min.js"></script>
     <script src="jquery.bxslider.js"></script>
+    <!--font awsome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <script>
     $(document).ready(function(){
@@ -21,7 +24,7 @@
         slideWidth: 1000, //슬라이드 너비
         minSlides: 1, //슬라이드 최소 노출 개수
         maxSlides: 1, // 슬라이드 최대 노출개수
-        speed: 900, //슬라이드 전환속도
+        speed: 500, //슬라이드 전환속도
         autocontrols:true , //이전 , 다음 버튼노출
         auto:true , //슬라이드 자동실행 여부
         pager:true, //슬라이드 버튼 노출 여부
@@ -32,7 +35,6 @@
 <body>
     <div id="topbanner">
     </div>
-
         <div class="navibar">
             <div class="toplogo"></div><!--왼쪽로고-->
 
@@ -168,22 +170,24 @@
     <div class="maintop">
         <div id="bx">
             <ul class="main">
-                <li><img src="images/index_img/main1.jpg">
+                <li><img src="images/index_img/main1.jpg" height="100">
                     <p>Mememi's Summer OASIS</p></li>
                 
-                <li><img src="images/index_img/main3.jpg">
+                <li><img src="images/index_img/main3.jpg" height="100">
                     <p>CoolNess In Summer OASIS</p></li>
 
-                <li><img src="images/index_img/main4.jpg">
+                <li><img src="images/index_img/main4.jpg" height="100">
                     <p>Welcome To Summer OASIS</p></li>
             </ul>
         </div>
 
-
         <div id="mainbanner">
+            <div class="oasis">
             <img src="images/index_img/main2.jpg" alt="main4">
             <p>Summer OASIS</p>
         </div>
+        </div>
+        
 </div><!--maintop종료-->
 
 <div class="mainhover">
@@ -213,16 +217,16 @@
     </div><!--now 종료-->
 </div>
 
-<div class="garden">
-    <div class="grdtxt">
-        <div><p>MeMeMi Garden</p>
-        <div>—</div>
-        <div>Eat & Life</div>
-        <div>문화와 라이프 스타일이 공존하는 <br>아트테인먼트 미미미 가든</div>
+<div class="contxt">
+    <div class="title">
+        <h3>MeMeMi Garden</h3>
+        <div>─</div>
+        <div>문화와 라이프스타일이 공존하는<br>
+             아트테인먼트 미미미 가든</div>
     </div>
+</div>
 
         <div class="gdimg">
-
             <div><p>미미미가든</p><a href="#">
                 <img src="images/index_img/14_0.jpg">
                 <u>View Now</u>
@@ -258,36 +262,106 @@
                 <u>View Now</u>
                 </a>
             </div>
-        </div><!--gdimg 종료-->
-
-    </div><!--grdtxt 종료-->
+        </div>
+    </div>
 </div><!--garden 종료-->
 
-<div class="contxt">
-    <div><p>MeMeMi Garden</p>
-    <div>—</div>
-    <div>Eat & Life</div>
-    <div>문화와 라이프 스타일이 공존하는 <br>아트테인먼트 미미미 가든</div>
-</div>
-
-
+<!--  backgroud attachment fixed-->
 <div class="container">
     <div class="backimg"></div>
 </div>
 
-<div class="container2">
-    <div class="bg1">
-        <h5>미미미 가든 카페 청담</h5>
-        <p>서울 특별시 강남구 도산대로 417 1F</p>
+<!-- 하단부 -->
+<div class="contxt">
+    <div class="title">
+        <h3>Eat & Life MeMeMi</h3>
+        <h4>FROM MILANO</h4>
+        <div>─</div>
+        <div>미미미는 이탈리아 밀라노 비아 브레라 23에서 탄생한 글로벌 아트테인먼트입니다.<br>
+            가든,키친,카페 3가지 타입으로 패션과 라이프 스타일을 접목한 새로운 공간을 선보이고 있습니다.</div>
     </div>
 </div>
 
-<div class="container3">
-    <div class="bg2">
-        <h5>미미미 가든 BAR&RESTAURANT</h5>
-        <p>서울 특별시 강남구 도산대로 417 B1-B2F</p>
+<!-- / -->
+<div class="container1">
+    <ul>
+        <li class="box1"><a href="#">
+            <div class="bg1">
+                <h5>미미미 가든 카페 청담</h5></a>
+                <h5>서울 특별시 강남구 도산대로 417 1F</h5>
+            </div>
+        </a></li>
+
+        <li class="box1"><a href="#">
+            <div class="bg2">
+                <h5>미미미 가든 BAR&RESTAURANT</h5></a>
+                <h5>서울 특별시 강남구 도산대로 417 B1-B2F</h5>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<!-- MeMeMi Garden TREND 시작 -->
+
+<div class="contxt2">
+    <div class="title">
+        <h3>MeMeMi Garden TREND</h3>
+        <div>─</div>
+        <div>미미미 가든의 스페셜한 스토리<br>지금 확인해보세요</div>
+    
+    <!-- 이미지 10장 -->
+    <div class="section">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+        <div class="b6"></div>
+        <div class="b7"></div>
+        <div class="b8"></div>
+        <div class="b9"></div>
+        <div class="b10"></div>
     </div>
 </div>
 
+<!-- footer 시작 -->
+<footer>
+    <div class="stay">
+        <div class="ft1">
+            <h2>Stay connected!<br>Follow us on instagram</h2>
+            <h6>@mememi.official</h6>
+        </div>
+    </div>
+
+    <!-- 참고 -->
+    <div class="footer2">
+        <div class="footer_left">
+            <img src="images/common/neon_logo2.png">
+            <p>(주)미미미 | 대표이사 : 양지해</p>
+            <p>06014 서울특별시 강남구 도산대로 417 (청담동) | Tel : 02-518-8765</p>
+            <p>Email : kcpark@metrocity.co.kr | 사업자등록번호 : 5198700640 <a href="#"><button>사업자정보확인</button></a></p>
+            <p>통신판매업신고 : 2017-서울강남-03277 | 개인정보관리책임자 : 박한철</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-vimeo"></i></a></li>
+            </ul>
+        </div><!--footer_left-->
+
+        <div class="footer_right">
+            <ul>Help
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <ul>Mememi
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">매장소개</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div><!--footer2-->
+</footer>
 </body>
 </html>
