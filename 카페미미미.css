@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 *{margin: 0; padding: 0; font-family: 'FuturaStd-Book';}
+body{width: 100%; height: 100%;}
 ul,li{list-style: none;}
 a{text-decoration: none;}
 @font-face{font-family:"FuturaStd-Book";src:url(font/FuturaStd-Book.woff);}
@@ -8,19 +9,23 @@ a{text-decoration: none;}
 
 #topbanner{
     width: 100%;
-    height: 700px;
+    height: 600px;
     background: url(images/common/hd_visual.png)no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
+    background-attachment: fixed;
 }
 .toplogo{
     position:absolute;
-    top:20px;
-    left: 50px;
-    width: 184px;
+    top:15px;
+    left: 100px;
+    width: 300px;
     height: 54px;
     background: url(images/common/mememi.png) no-repeat;
 }
+
+
+/*  */
 #join{height:76px; top:0; right:20px; padding:12px 0; position:absolute;}
 #join > ul {width:100%; line-height:76px; font-size:11px;}
 #join > ul > li{height:76px; color:#979797; float:left; padding:0 9px;}
@@ -29,7 +34,7 @@ a{text-decoration: none;}
 
 .navibar{
     width: 100%;
-    /* height: 50px; */
+    height: 80px;
     /* border: 1px solid red; */
     position: relative;
     top: 0%;
@@ -48,7 +53,6 @@ a{text-decoration: none;}
     float: left;
     width: 118px;
     height: 100%;
-
 }
 
 .nav>li>a{
@@ -59,7 +63,7 @@ a{text-decoration: none;}
     text-align: center;
     line-height: 80px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 10pt;
     transition: all .3s;
     font-weight: bold;
     margin-left: 2px;
@@ -73,18 +77,23 @@ a{text-decoration: none;}
     width: 708px;
     height: 400px;
     position: relative;
-    top: 30%;
+    top: 10%;
     left: 0;
     z-index: 9999;
     display: none;
     overflow: hidden;
-    transition: all .5s
+    transition: all .5s;
+    font-size: 10pt;
 }
 
+
+.smenu>li p>a{
+    font-size: 15pt;
+
+}
 .nav:hover>li:last-child{
-    position: absolute;
-    top: 100%;
-    height: 420px;
+    /* position: absolute; */
+    height: 450px;
     opacity: .9;
     background-color: rgba(250,250,250,1);
 }
@@ -98,7 +107,7 @@ a{text-decoration: none;}
     transition: all .3s;
     z-index: -1;
 }
-.nav>li:hover> .smenu{display: block;}
+.nav>li:hover>.smenu{display: block;}
 
 .nav>li>.smenu>li>a{
     color: #000;
@@ -142,7 +151,7 @@ a{text-decoration: none;}
 .ul_img p:nth-of-type(1){
     width: 100%;
     position: absolute;
-    top: 10%;
+    top: 10px;
     color: #000;
     text-align: center;
     text-decoration: underline;
@@ -161,13 +170,14 @@ a{text-decoration: none;}
 
 .ul_img b{
     position: absolute;
-    bottom: -25px;
+    bottom: 0px;
     display: block;
     left: 50%;
     transform: translateX(-50%);
     color: #000;
     width: 150px;
     text-align: center;
+    font-size: 10pt;
     /* border: 1px solid red; */
 }
 
@@ -176,7 +186,7 @@ a{text-decoration: none;}
     top:-460px;
 }
 
-.nav>li .smenu> .moveRight{
+.nav>li .smenu>.moveRight{
     position: absolute;
     top: 0;
     left: 236px;
@@ -189,12 +199,11 @@ a{text-decoration: none;}
     padding-left: 20px;
     box-sizing: border-box;
 }
-.nav>li:nth-child(3) .ul_img{top: -290px;}
+.nav>li:nth-child(3) .ul_img{top: -290px; }
 .nav>li p:nth-child(3) {font-size: 20px;}
 /* li: 4번째 서브메뉴 이미지 조정 */
 .nav>li:nth-child(4) .ul_img{width: 472px; top: -90px;}
 /* li : 5번째 서브메뉴 이미지 조정 */
-
 .nav>li:nth-child(5) .ul_img{float: left; left: 0; top: 0;}
 .img_container{margin: 0 auto; width: 660px; height: 320px;}
 /* li 6번째 서브메뉴 이미지 위치조정 */
@@ -202,6 +211,7 @@ a{text-decoration: none;}
     top: -380px;
     float: left;
 }
+
 /* bxslider+오른쪽 이미지 */
 .main{
     width: 100%;
@@ -223,7 +233,7 @@ a{text-decoration: none;}
     width: 50%;
     position: absolute;
     right: 0;
-    top: 800px;
+    top: 700px;
     margin-bottom: 100px;
     height:900px;
 }
@@ -259,10 +269,10 @@ a{text-decoration: none;}
 
 .mainhover{
     width: 100%;
-    height: 680px;
+    height: 800px;
     background: #f7f1f0;
     position: relative;
-    top: 10px;
+    top: -60px;
     margin: 0 auto;
     padding-top: 3%;
 }
@@ -431,7 +441,7 @@ a{text-decoration: none;}
     left: 10px;
     right: 10px;
     color: white;
-    font-size: 16px;
+    font-size: .8rem;
     font-weight: bold;
     text-align: center;
     transition: all 1s;
@@ -449,9 +459,9 @@ a{text-decoration: none;}
     opacity: 1; /* 호버 시 글씨 보이게 */
 }
 u{
-    font-size: 1rem; 
+    font-size:500px;
     position: absolute; 
-    top: 50%; 
+    top: 55%; 
     left: 40%;
     color: #fff;
     text-align: center;
@@ -469,18 +479,24 @@ u{
     top: 42%;
 }
 
-.gdimg div p:nth-child(3){
+.gdimg div:nth-child(3) p{
     position: absolute;
-    top:-300px;
+    top: 20%;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 500;
 }
+.gdimg div:nth-child(3) u{
+    top: 62%;
+}
+.gdimg div:nth-child(5) p{
+    position: absolute;
+    top: 37%;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 500;
 
-
-
-
-
-
-
-
+}
 
 /*  */
 
@@ -520,6 +536,7 @@ u{
     height: 550px;
     position: relative;
     top: 40px;
+    border: 1px solid rebeccapurple;
 }
 .backimg{
     width: 100%;
@@ -540,7 +557,7 @@ u{
     width: 1050px; 
     height: 100%; 
     margin: 0 auto; 
-    margin-top: 50px;
+    margin-top:70px
     /* border:  1px solid red; */
 }
 
@@ -577,7 +594,8 @@ u{
     font-size: 1rem;
     font-weight: 500;
 }
-.bg1 h5:nth-child(2){position: absolute;
+.bg1 h5:nth-child(2){
+    position: absolute;
     text-align: center;
     margin: auto;
     width: 500px;
@@ -607,13 +625,6 @@ u{
     top: 340px;
     font-size: 10pt;
     font-weight: 500;
-}
-
-.container1>h5{
-    text-align: center;
-    padding-top: 10px;
-    color: #000;
-    font-size: 1rem;
 }
 h4{color: #666;}
 
@@ -776,7 +787,7 @@ h4{color: #666;}
 }
 
 
-/*  */
+/* 맨 하단부시작 */
 .footer2{
     width:100%;
     height:450px;
